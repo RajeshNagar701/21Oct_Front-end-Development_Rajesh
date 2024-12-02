@@ -1,0 +1,54 @@
+<!--
+Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+*{
+ box-sizing: border-box;
+}
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+	*{
+		box-sizing:border-box;
+	}
+	
+	.test1{
+		width:50%;
+		padding-left:2%;
+		border:solid 10px green;
+		height:200px;
+		float:left;
+		background-color:yellow;
+	}
+	.test2{
+		width:50%;
+		padding:3%;
+		height:200px;
+		float:left;
+		background-color:blue;
+	}
+	
+	
+</style>
+</head>
+
+
+<body>
+	<div class="test1">
+		<p>ADOCMEDI help people to save there time and helping Patients to take digital appointment and Rx. Patient can add their medical reports here also so it shows to his doctor directly. With this we can save paper and make our INDIA a green country. If not require don't take paper from doctor. Now you can save your health data digitally and be free from worries of taking care of physical health records.Wherever you go you just need to give your last time visit appointment id or patient id for your last health details. Doctor find all your health records digitally.</p>
+	</div>
+	<div class="test2">
+		<p>ADOCMEDI help people to save there time and helping Patients to take digital appointment and Rx. Patient can add their medical reports here also so it shows to his doctor directly. With this we can save paper and make our INDIA a green country. If not require don't take paper from doctor. Now you can save your health data digitally and be free from worries of taking care of physical health records.Wherever you go you just need to give your last time visit appointment id or patient id for your last health details. Doctor find all your health records digitally.</p>
+	</div>
+
+</body>
+</html>
