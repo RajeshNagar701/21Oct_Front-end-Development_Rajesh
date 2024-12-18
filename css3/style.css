@@ -67,11 +67,10 @@ body {
 	background-image:url(project/img1.jpg);
 	background-size:100% 100%; 
 	text-align:center;
-	padding:20%;
+	padding:10%;
 	font-weight:1000;
 	font-size:300%;
 	color:white;
-	
 }
 
 /* Style the top navigation bar */
