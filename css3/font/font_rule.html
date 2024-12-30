@@ -1,39 +1,45 @@
 
 
+<!--
+web fonts / google font
+
+A web font is any font used in a website’s design that isn’t 
+installed by default on the end user’s device
+
+<!--
+
+
+https://www.1001fonts.com/google-web-fonts.html?page=1
+
+file.ttf
+file.otf
+file.woff
+
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <style> 
 @font-face {
-   font-family: brinda;
-   src: url(Gujrati_Saral-1.ttf);
+   font-family: raj;
+   src:url('Satisfy-Regular.ttf');
 }
 
 @font-face {
-   font-family: nagar;
-   src: url(shruti.ttf);
+   font-family: krishna;
+   src:url('AlexBrush-Regular.ttf');
 }
-
-h1{
-   font-family: nagar;
-}
-
-p{
-   font-family: brinda;
-}
-
-
 </style>
 </head>
 <body>
 
-<h1>The @font-face Rule</h1>
-
-<div>
-With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
-</div>
-
-<p><b>kale tme Aavjo heer</p>
-
+	<h1 style="font-family:Arial">Hi i a font family default style</h1>
+	
+	<h1 style="font-family:raj">Hi i a font family custom web font style 1</h1>
+	
+	<h1 style="font-family:krishna">Hi i a font family custom web font style 2</h1>
+	
 </body>
 </html>
