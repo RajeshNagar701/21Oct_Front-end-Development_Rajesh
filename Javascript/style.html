@@ -1,0 +1,61 @@
+
+<button onclick="change1()">Change css 1</button>
+<h1 style="color:red;background-color:yellow" id='style1'>hI I AM JAVASCRIPT</h1>
+
+<script>
+	function change1()
+	{
+		document.getElementById('style1').style.color='pink';
+		document.getElementById('style1').style.backgroundColor='blue';
+		document.getElementById('style1').style.textDecoration='underline';
+		document.getElementById('style1').style.textTransform='uppercase';
+	}
+
+</script>
+
+
+<hr>
+
+<button onclick="change2()">Change css 2</button>
+<h1 style="color:red;background-color:yellow" id='style2'>hI I AM JAVASCRIPT</h1>
+
+
+
+<script>
+	function change2()
+	{
+		document.getElementById('style2').setAttribute('style','color:pink;background-color:blue;text-decoration:underline;text-transform:uppercase');
+	}
+
+</script>
+
+
+<hr>
+
+<style>
+	.mystyle1{
+		color:pink;
+		background-color:blue;
+		text-decoration:underline;
+		text-transform:uppercase;
+	}
+	.mystyle2{
+		color:blue;
+		background-color:yellow;
+		text-decoration:underline;
+		text-transform:uppercase;
+	}
+</style>
+
+
+
+<button onclick="change3()">Change css 3</button>
+<h1 class="mystyle1" id='style3'>hI I AM JAVASCRIPT</h1>
+
+
+<script>
+	function change3()
+	{
+		document.getElementById('style3').setAttribute('class','mystyle2');
+	}
+</script>

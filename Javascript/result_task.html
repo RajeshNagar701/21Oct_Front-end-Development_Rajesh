@@ -14,45 +14,7 @@
 	function result()
 	{
 		
-		var english=document.getElementById('english').value;
-		var hindi=document.getElementById('hindi').value;
-		var gujarati=document.getElementById('gujarati').value;
-		
-		var total;
-		
-		total=+english + +hindi + +gujarati;
-		document.getElementById('total').innerHTML="Total Marks" + total;
-		
-		
-		
-		var per;
-		per=(total/300)*100;
-		document.getElementById('per').innerHTML=per + " %";
-		
-		
-		
-		
-		if(per>=90)
-		{
-		document.getElementById('grade').innerHTML="Grade : A";
-		}
-		else if(per>=70)
-		{
-		document.getElementById('grade').innerHTML="Grade : B";
-		}
-		else if(per>=50)
-		{
-		document.getElementById('grade').innerHTML="Grade : C";
-		}
-		else if(per>=40)
-		{
-		document.getElementById('grade').innerHTML="Grade : D";
-		}
-		else
-		{
-		document.getElementById('grade').innerHTML="fail";
-		}
-		return false;
+	
 	}
 	
 </script>
@@ -76,13 +38,63 @@
     <button class="btn btn-primary">Submit</button>
   </form>
   
+  <br>
+  <br>
   
   <h1 id="total"></h1>
   <br>
+  <br>
   <h1 id="per"></h1>
-   <br>
+  <br>
+  <br>
   <h1 id="grade"></h1>
 </div>
+
+	<script>
+	
+	function result()
+	{
+		var english=document.getElementById('english').value;
+		var hindi=document.getElementById('hindi').value;
+		var gujarati=document.getElementById('gujarati').value;
+		
+		var total=+english + +hindi + +gujarati;
+		document.getElementById('total').innerText="Total is :" + total;
+		
+		
+		var per=(total*100)/300;
+		document.getElementById('per').innerText="Per is :" + per +"%";
+		
+		
+		if(per>90)
+		{
+			document.getElementById('grade').innerText="Grade is : A ";
+			document.getElementById('grade').style.color="green";
+		}
+		else if(per>70)
+		{
+			document.getElementById('grade').innerText="Grade is : B ";
+			document.getElementById('grade').style.color="green";
+		}
+		else if(per>50)
+		{
+			document.getElementById('grade').innerText="Grade is : C ";
+			document.getElementById('grade').style.color="green";
+		}
+		else
+		{
+			document.getElementById('grade').innerText="Grade is : Fail ";
+			document.getElementById('grade').style.color="red";
+		}
+		
+		return false;
+	}
+	
+	
+	</script>
+	
+
+
 
 </body>
 </html>
