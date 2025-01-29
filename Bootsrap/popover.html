@@ -49,12 +49,23 @@
   <br>
 	<br>
   <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Content">Right</a>
-
+  <br>
+  <br>
+	<br>
+	<br>
+  <br>
 </div>
 
 
 
 <script>
+/*
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+*/
+
 $(document).ready(function(){
   $('[data-bs-toggle="popover"]').popover();   
 });
